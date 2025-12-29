@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Helper - Repository Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                Claude Code Helper
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">Hoe het werkt</a>
+                <a href="#installation">Installatie</a>
+                <a href="#best-practices">Best Practices</a>
+                <a href="https://github.com/anthropics/claude-code" class="btn btn-outline" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Claude Code Helper</h1>
+            <p class="hero-subtitle">Genereer effectieve prompts voor Claude Code op basis van repository-analyse</p>
+            <div class="hero-buttons">
+                <a href="#installation" class="btn btn-primary">Aan de slag</a>
+                <a href="#how-it-works" class="btn btn-secondary">Bekijk demo</a>
+            </div>
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">Terminal</span>
+                </div>
+                <div class="terminal-body">
+                    <code>
+<span class="prompt">$</span> python main.py prompt . --goal "Voeg dark mode toe"
+
+<span class="output">╭─────────────────────────────╮
+│ Claude Code Helper          │
+│ Repository Prompt Generator │
+╰─────────────────────────────╯
+
+Taaktype: new_feature
+
+<span class="highlight">Gegenereerde Prompt:</span>
+**Repository Context:**
+Repository: my-app
+Taal: TypeScript (150 bestanden)
+Frameworks: React, Next.js
+
+**Taak:** Voeg dark mode toe
+
+**Gewenste aanpak:**
+1. Analyseer bestaande code structuur
+2. Geef eerst een kort plan
+3. Implementeer stap voor stap</span>
+                    </code>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Repository Analyse</h3>
+                    <p>Automatische detectie van talen, frameworks, en projectstructuur. Begrijp je codebase in één klik.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Kernbestand Generator</h3>
+                    <p>Creëer een .claude-context.md bestand dat Claude altijd het grote geheel laat overzien.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Slimme Prompts</h3>
+                    <p>Genereer geoptimaliseerde prompts gebaseerd op Anthropic's best practices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Doorvraag Functionaliteit</h3>
+                    <p>Intelligente vragen voor meer context resulteren in betere prompts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Taakherkenning</h3>
+                    <p>Automatische classificatie: bug fix, feature, refactor, optimalisatie en meer.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Best Practices</h3>
+                    <p>Ingebouwde tips en richtlijnen voor effectief gebruik van Claude Code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>Hoe het werkt</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Analyseer je repository</h3>
+                        <p>De tool scant je codebase en detecteert automatisch talen, frameworks, en belangrijke bestanden.</p>
+                        <div class="code-block">
+                            <code>python main.py analyze /pad/naar/repo</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Beschrijf je doel</h3>
+                        <p>Vertel wat je wilt bereiken. De tool stelt verduidelijkingsvragen voor optimale context.</p>
+                        <div class="code-block">
+                            <code>python main.py prompt --goal "Fix de login bug"</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Ontvang je prompt</h3>
+                        <p>Krijg een gestructureerde, effectieve prompt inclusief aanbevolen aanpak en vervolgstappen.</p>
+                        <div class="code-block">
+                            <code>→ Gegenereerde prompt + tips + follow-ups</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2>Installatie</h2>
+            <div class="install-steps">
+                <div class="install-card">
+                    <h3>1. Clone de repository</h3>
+                    <div class="code-block">
+                        <code>git clone https://github.com/your-repo/claude-code-helper.git
+cd claude-code-helper</code>
+                    </div>
+                </div>
+                <div class="install-card">
+                    <h3>2. Installeer dependencies</h3>
+                    <div class="code-block">
+                        <code>pip install -r requirements.txt</code>
+                    </div>
+                </div>
+                <div class="install-card">
+                    <h3>3. Start de tool</h3>
+                    <div class="code-block">
+                        <code># Analyseer een repository
+python main.py analyze /pad/naar/repo
+
+# Genereer een prompt
+python main.py prompt --goal "Jouw doel hier"
+
+# Interactieve modus
+python main.py interactive</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2>Commando's</h2>
+            <div class="commands-table">
+                <div class="command-row">
+                    <div class="command-name"><code>analyze</code></div>
+                    <div class="command-desc">Analyseer repository en genereer kernbestand</div>
+                </div>
+                <div class="command-row">
+                    <div class="command-name"><code>prompt</code></div>
+                    <div class="command-desc">Genereer een geoptimaliseerde prompt voor je doel</div>
+                </div>
+                <div class="command-row">
+                    <div class="command-name"><code>prompt --quick</code></div>
+                    <div class="command-desc">Snelle prompt zonder verduidelijkingsvragen</div>
+                </div>
+                <div class="command-row">
+                    <div class="command-name"><code>interactive</code></div>
+                    <div class="command-desc">Start interactieve sessie voor meerdere prompts</div>
+                </div>
+                <div class="command-row">
+                    <div class="command-name"><code>tips</code></div>
+                    <div class="command-desc">Toon best practices voor Claude Code</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="best-practices" class="best-practices">
+        <div class="container">
+            <h2>Best Practices</h2>
+            <div class="practices-grid">
+                <div class="practice-card good">
+                    <div class="practice-header">
+                        <span class="practice-icon">✓</span>
+                        <h3>Wees Specifiek</h3>
+                    </div>
+                    <p class="practice-bad">❌ "Fix de bugs"</p>
+                    <p class="practice-good">✓ "Fix de bug in src/auth.py:45 waar login crasht bij lege passwords"</p>
+                </div>
+                <div class="practice-card good">
+                    <div class="practice-header">
+                        <span class="practice-icon">✓</span>
+                        <h3>Geef Context</h3>
+                    </div>
+                    <p class="practice-bad">❌ "Voeg caching toe"</p>
+                    <p class="practice-good">✓ "Voeg Redis caching toe aan getUser in UserService"</p>
+                </div>
+                <div class="practice-card good">
+                    <div class="practice-header">
+                        <span class="practice-icon">✓</span>
+                        <h3>Splits Complexe Taken</h3>
+                    </div>
+                    <p class="practice-bad">❌ "Bouw complete auth system"</p>
+                    <p class="practice-good">✓ "Stap 1: Analyseer huidige auth structuur"</p>
+                </div>
+                <div class="practice-card good">
+                    <div class="practice-header">
+                        <span class="practice-icon">✓</span>
+                        <h3>Vraag om Lezing Eerst</h3>
+                    </div>
+                    <p class="practice-good">✓ "Lees eerst src/services/user.py en leg de auth flow uit"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Klaar om te starten?</h2>
+            <p>Verbeter je Claude Code workflow vandaag nog.</p>
+            <a href="#installation" class="btn btn-primary btn-large">Installeer nu</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    Claude Code Helper
+                </div>
+                <p>Genereer effectieve prompts voor Claude Code</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/anthropics/claude-code" target="_blank">GitHub</a>
+                <a href="https://docs.anthropic.com" target="_blank">Anthropic Docs</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
